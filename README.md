@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=65 ;
 
-# dump data categories 
+# Dump data categories 
 INSERT INTO `categories` (`id`, `name`, `description`, `created`, `modified`) VALUES
 (1, 'Car', 'Category for anything related to car.', '2014-06-01 00:35:07', '2014-05-30 17:34:33'),
 (2, 'Auto', 'Gadgets, drones and more.', '2014-06-01 00:35:07', '2014-05-30 17:34:33'),
@@ -31,7 +31,7 @@ INSERT INTO `categories` (`id`, `name`, `description`, `created`, `modified`) VA
 (6, 'Books', 'Kindle books, audio books and more.', '2016-01-08 13:27:26', '2016-01-08 13:27:47'),
 (13, 'Sports', 'Drop into new winter gear.', '2016-01-09 02:24:24', '2016-01-09 01:24:24');
 
-# dump data products 
+# Dump data products 
 INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `created`, `modified`) VALUES
 (1, 'Sony P880 4X HD', 'My first awesome phone!', '336', 3, '2014-06-01 01:12:26', '2014-05-31 17:12:26'),
 (2, 'Google Nexus 7', 'The most awesome phone of 2013!', '299', 2, '2014-06-01 01:12:26', '2014-05-31 17:12:26'),
