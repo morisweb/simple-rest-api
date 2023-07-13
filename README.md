@@ -1,5 +1,5 @@
 # simple-rest-api
-I use Laragon  ( https://laragon.org/ ) for local development bu you can use another tool. 
+I use Laragon  ( https://laragon.org/ ) for local development but you can use another tool. 
 
 # Create categories table
 CREATE TABLE IF NOT EXISTS `categories` (
