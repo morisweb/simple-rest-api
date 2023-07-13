@@ -54,3 +54,4 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `cr
 
 
 # set connection db in config/database.php, replace "php-api".
+# connect-test.php is for check the connection with db.
