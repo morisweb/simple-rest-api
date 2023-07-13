@@ -15,7 +15,7 @@
 
    // constructor with $db as database connection
    public function _construct($db){
-    $this->conn=$db;
+    $this->conn = $db;
    }
    // create product
    function create(){
@@ -50,12 +50,12 @@
   
     return false;
       
-}
+   }
    // read products
    function read(){
     // select all query
     $query = "SELECT
-                c.name as category_name, p.id, p.nae, p.description, p.price, p.category_id, p.created
+                c.name as category_name, p.id, p.name, p.description, p.price, p.category_id, p.created
             FROM
                 " . $this->table_name . " p
                 LEFT JOIN
@@ -63,13 +63,11 @@
                         ON p.category_id = c.id
             ORDER BY
                 p.created DESC";
-  
     // prepare query statement
     $stmt = $this->conn->prepare($query);
-  
     // execute query
     $stmt->execute();
-  
+
     return $stmt;
    }
    // delete the product
@@ -168,7 +166,7 @@
     $this->category_name = $row['category_name'];
   }
   // search products
-function search($keywords){
+   function search($keywords){
   
     // select all query
     $query = "SELECT

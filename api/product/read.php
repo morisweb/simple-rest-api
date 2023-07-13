@@ -13,9 +13,8 @@ $db = $database->getConnection();
   
 // initialize models
 $product = new Product($db);
-  
 // query products
-$stmt = $product->read();
+$stmt= $product->read();
 $num = $stmt->rowCount();
   
 // check if more than 0 record found
@@ -52,8 +51,8 @@ if($num>0){
     // show products data in json format
     echo json_encode($products_arr);
 }
-  // no products found will be here
-  else{
+  
+else{
   
     // set response code - 404 Not found
     http_response_code(404);

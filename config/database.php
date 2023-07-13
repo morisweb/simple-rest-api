@@ -6,7 +6,7 @@ class Database{
     private $db_name = "php-api";
     private $username = "php-api";
     private $password = "php-api";
-    public $conn;
+    public  $conn;
   
     // get the database connection
     public function getConnection(){
